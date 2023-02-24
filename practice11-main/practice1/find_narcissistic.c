@@ -1,5 +1,5 @@
 /**
-* @file find_narcissistic.h
+* @file find_narcissistic.c
 * @author Коваленко В.А, гр. 515-В
 * @date 20 серпня     2022
 * @brief Навчальна практика.
