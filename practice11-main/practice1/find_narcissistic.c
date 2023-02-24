@@ -1,3 +1,12 @@
+/**
+* @file find_narcissistic.h
+* @author Коваленко В.А, гр. 515-В
+* @date 20 серпня     2022
+* @brief Навчальна практика.
+*
+* 34 Варіант - Числа Армстронга
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -12,14 +21,14 @@ PUBLIC long int ArmstrongNumbersCheck(long int min, long int max)
 
     for (long int Armstong_Number = min; Armstong_Number <= max; Armstong_Number++)
     {
-        // Value of sum and max index of number
+        // Значення суми і ступеня залежно від числа
         int index = 0;
         long int sum = 0;
 
 
         value = Armstong_Number;
 
-        // Loop by step up (1 - 1, 10 - 2, 100 - 3...)
+        // Цикл по підвіщенню ступеня (1 - 1, 10 - 2, 100 - 3...)
         while (value != 0)
         {
             value /= 10;
@@ -27,7 +36,7 @@ PUBLIC long int ArmstrongNumbersCheck(long int min, long int max)
         }
         value = Armstong_Number;
 
-        // Check coincidence
+        // Перевірка на збіг суми перемноженних членів з самим числом
         while (value > 0)
         {
             number = value % 10;
